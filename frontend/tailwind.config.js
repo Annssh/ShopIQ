@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./pages/**/*.{html,js,jsx}", "./src/**/*.{html,js,jsx}","./controller/**/*.{html,js,jsx}"],
+  content: [
+    "./pages/**/*.{html,js,jsx}",
+    "./src/**/*.{html,js,jsx}",
+    "./controller/**/*.{html,js,jsx}",
+  ],
   theme: {
     extend: {
       colors: {
-        primary: "#00022a"
-      }
+        primary: "#001119",
+      },
     },
     screens: {
       sm: "620px",
@@ -14,5 +18,5 @@ export default {
       xl: "1200px",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
