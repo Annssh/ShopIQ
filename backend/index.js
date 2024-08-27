@@ -1,4 +1,4 @@
-import connectDB from '../config/dbconnect.js';
+import connectDB from './config/dbconnect.js';
 import { app } from './server.js';
 const port = process.env.PORT || 5000;
 
