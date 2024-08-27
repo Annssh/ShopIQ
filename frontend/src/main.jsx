@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import Login from "../pages/Login.jsx";
+import Signup from "../pages/Signup.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "signup",
+        element: <Signup />,
       },
     ],
   },
